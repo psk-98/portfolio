@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 60px 0;
+    padding: 0 0 20px 0;
+}
+.footer .social-links {
+    display: flex;
+    margin: 10px 0 0 0;    
+}
+.footer .social-link {
+    margin: 5px;
+}
+.footer .copyright-sec {
+    font-size: 9px;
+}
+@media (min-width: 768px) {
+    .footer .social-links svg {
+        height: 27px;
+    }
+}

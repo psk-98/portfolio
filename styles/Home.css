@@ -1,0 +1,365 @@
+.home-section {
+    height: 85vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 15vh 0;
+}
+.intro-name, div.to-contact-btn, .cv-btn {
+    font-size: 15px;
+}
+.intro-desc {
+    font-size: 32px;
+    margin: 10px 0;
+}
+div.to-contact-btn, .cv-btn{
+    width: fit-content;
+    padding: 9px 5px;
+    text-transform: uppercase;
+    box-shadow: rgba(245, 245 ,245, .16) 7px 7px;
+}
+.scroll-deco {
+    position: absolute;
+    bottom: 5vh;
+    right: 0px;
+    font-size: 10px;
+    text-transform: uppercase;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: rotateZ(90deg);
+    width: 15vh;
+}
+.scroll-line {
+    width: 15vh;
+    height: 1px;
+}
+
+.section-heading {
+    font-size: 35px;
+}
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-section .skills-list {
+    margin: 20px 0;
+    font-size: 16px;
+}
+.skill-block {
+    padding: 5px 7px;
+    margin: 5px 10px 5px 0;
+}
+.background-header, .project-heading {
+    font-size: 18px;
+    margin: 5px 0;
+}
+.background-desc {
+    display: flex;
+    flex-direction: column;
+}
+.background-desc p, .project-desc p {
+    font-size: 15px;
+    margin: 5px 0;
+    font-weight: 300;
+}
+.background-links {
+    margin: 15px 0;
+}
+.background-links a {
+    text-decoration: none;
+}
+.background-links .social-links {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+.background-links .social-links a {
+    margin: 15px 15px 15px 0;
+    cursor: pointer;
+}
+.email-wrapper {
+    margin: 15px 15px 15px 0;
+    cursor: pointer;
+    perspective: 600px;
+    height: 20px;
+    width: 40px;
+}
+.email-background {
+    display: flex;
+}
+.email-background button{
+    margin: 0 0 0 2px;
+    background: none;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+.cv-btn {
+    display: flex;
+    align-items: center;
+    padding: 11px;
+    cursor: pointer;
+}
+.cv-btn svg{
+    margin: 0 0 0 7px;
+}
+
+.projects-section {
+    margin: 80px 0;
+}
+.project-display {
+    margin: 20px 0 50px 0;
+}
+.project-content {
+    margin: 0 0 40px 0;
+}
+.project-heading {
+    font-size: 22px;
+}
+.projects-section .skills-list {
+    font-size: 13px;
+}
+.project-desc {
+    margin: 10px 0;
+}
+.project-link {
+    margin: 10px 0 30px 0;
+    text-decoration: none;
+    font-weight: 500;
+}
+.project-link div {
+    font-size: 12px;
+    width: fit-content;
+    padding: 20px 40px;
+}
+.project-img, .project-img img {
+    max-width: 100%;
+    width: 100%;
+}
+.project-img {
+    margin: 10px 0;
+}
+
+.contact-section form {
+    margin: 20px 0;
+    width: 100%;
+}
+.contact-section form input, .contact-section form textarea {
+    background: none;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 90%;
+}
+.contact-section form input::placeholder, .contact-section form textarea::placeholder{
+    text-transform: uppercase;
+}
+.contact-section form textarea {
+    height: 200px;
+}
+.contact-section form button {
+    padding: 5px 20px;
+    font-size: 15px;
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .intro-name, div.to-contact-btn {
+        font-size: 25px;
+    }
+    .intro-desc {
+        font-size: 49px;
+        margin: 20px 0;
+    }
+    div.to-contact-btn {
+        padding: 18px 12px;
+        box-shadow: rgba(245, 245 ,245, .16) 10px 10px;
+    }
+    .scroll-deco {
+        font-size: 16px;
+        height: 35px;
+    }
+
+    .section-heading {
+        font-size: 57px;
+    }
+    .skills-section .skills-list {
+        margin: 30px 0;
+        font-size: 25px;
+    }
+    .skill-block {
+        padding: 7px 9px;
+        margin: 7.5px 15px 7.5px 0;
+    }
+    .background-header {
+        font-size: 30px;
+    }
+    .background-desc p, .project-desc p {
+        margin: 16px 0;
+        font-size: 25px;
+    }
+    
+    
+    .projects-section {
+        margin: 100px 0;
+    }
+    .project-display {
+        margin: 40px 0 60px 0;
+    }
+    .project-heading {
+        font-size: 36px;
+    }
+    .project-display .skills-list {
+        font-size: 18px;
+    }
+    .contact-section form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .contact-section div {
+        width: 47%;
+    }
+    .contact-section form input {
+        width: 100%;
+    }
+    .contact-section p {
+        width: 100%;
+    }
+    .contact-section form textarea {
+        width: 100%;
+        min-width: 100%;
+    }
+    .contact-section form button {
+        font-size: 25px;
+        margin: 5px 0;
+    }
+}
+@media (min-width: 1024px) {
+    .intro-desc, .background-desc {
+        width: 80%;
+    }
+    .project-display {
+        display: flex;
+        justify-content: space-between;
+    }
+    .project-content, .project-img {
+        max-width: 49%;
+        width: 49%;
+    }
+    .project-img {
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-img img {
+        max-width: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    div.to-contact-btn , .cv-btn{
+        border: 2px solid #f2e529;
+    }
+    .scroll-line {
+        background: #f5f5f5;
+    }
+    .section-heading {
+        text-decoration: line-through 2px solid #f2e529;
+    }
+    .email-background button{
+        color: #f2e529;
+        border: 1px solid #f2e529;
+    }
+    .skill-block {
+        background: #f2e529;
+        color: #000;
+    }
+    .project-link div {
+        background-color: #f2e529;
+        box-shadow: rgba(245, 245 ,245, .5) 10px 10px;
+        color: #000;
+    }
+    .project-img img{
+        box-shadow: rgba(245, 245 ,245, .16) 7px 7px;
+    }
+    
+    .contact-section form input, .contact-section form textarea {
+        border: #595959 solid 1px;
+        color: #f5f5f5;
+    }
+    .contact-section form input:focus, .contact-section form textarea:focus{
+        outline: #f5f5f5 solid 2px;
+    }
+    .contact-section form button {
+        border: #595959 1px solid;
+        color: #595959;
+        box-shadow: rgba(245, 245 ,245, .16) 7px 7px;
+    }
+    .contact-section form button.active {
+        border: #f5f5f5 1px solid;
+        color: #f5f5f5;
+        box-shadow: rgba(245, 245 ,245, .16) 7px 7px;
+    }
+
+
+    @media (min-width: 768px) {
+        .contact-section form button.active {
+            box-shadow: rgba(245, 245 ,245, .16) 10px 10px;
+        }
+    }
+}
+@media (prefers-color-scheme: light) {
+    div.to-contact-btn , .cv-btn{
+        border: 2px solid #f2e529;
+    }
+    .scroll-line {
+        background: #f5f5f5;
+    }
+    .section-heading {
+        text-decoration: line-through 2px solid #f2e529;
+    }
+    .email-background button{
+        color: #f2e529;
+        border: 1px solid #f2e529;
+    }
+    .skill-block {
+        background: #f2e529;
+        color: #000;
+    }
+    .project-link div {
+        background-color: #f2e529;
+        box-shadow: rgba(245, 245 ,245, .5) 10px 10px;
+        color: #000;
+    }
+    .project-img img{
+        box-shadow: rgba(245, 245 ,245, .16) 7px 7px;
+    }
+    
+    .contact-section form input, .contact-section form textarea {
+        border: #595959 solid 1px;
+        color: #f5f5f5;
+    }
+    .contact-section form input:focus, .contact-section form textarea:focus{
+        outline: #f5f5f5 solid 2px;
+    }
+    .contact-section form button {
+        border: #595959 1px solid;
+        color: #595959;
+        box-shadow: rgba(245, 245 ,245, .16) 7px 7px;
+    }
+    .contact-section form button.active {
+        border: #f5f5f5 1px solid;
+        color: #f5f5f5;
+        box-shadow: rgba(245, 245 ,245, .16) 7px 7px;
+    }
+
+
+    @media (min-width: 768px) {
+        .contact-section form button.active {
+            box-shadow: rgba(245, 245 ,245, .16) 10px 10px;
+        }
+    }
+}
