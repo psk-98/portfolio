@@ -1,9 +1,9 @@
-import About from "../components/about"
-import Contact from "../components/contact"
-import Footer from "../components/footer"
-import Intro from "../components/intro"
-import Nav from "../components/nav"
-import Projects from "../components/projects"
+import About from "../components/About"
+import Contact from "../components/Contact"
+import Footer from "../components/Footer"
+import Intro from "../components/Intro"
+import Nav from "../components/Nav"
+import Projects from "../components/Projects"
 
 export default function Home() {
   return (
