@@ -18,13 +18,16 @@ const About = () => {
           <div className="skill-block">Django</div>
           <div className="skill-block">Django Rest</div>
           <div className="skill-block">Restful API</div>
-          <div className="skill-block">React</div>
+          <div className="skill-block">React.js</div>
+          <div className="skill-block">Next.js</div>
           <div className="skill-block">React Router</div>
           <div className="skill-block">HTML</div>
           <div className="skill-block">CSS</div>
           <div className="skill-block">Redux</div>
-          <div className="skill-block">Redux Persist</div>
+          <div className="skill-block">Redux Toolkit</div>
           <div className="skill-block">PostgreSQL</div>
+          <div className="skill-block">Git</div>
+          <div className="skill-block">Figma</div>
         </div>
         <div className="background">
           <div className="background-header">
@@ -38,7 +41,7 @@ const About = () => {
             <p>
               My web development journey started with the CS50's Web Programming
               with Python and JavaScript and ever since I've been working to be
-              the best web developer I can be. I am self motivated, able to work
+              the best developer I can be. I am self motivated, able to work
               independtly or collabrativley.
             </p>
             <p>
