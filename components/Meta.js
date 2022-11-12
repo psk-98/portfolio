@@ -11,6 +11,7 @@ const Meta = () => {
       <title>Paul Khoza Dev</title>
       <link rel="icon" href="/favicon-32x32.png" />
       <link rel="icon" href="/favicon-16x16.png" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     </Head>
   )
 }

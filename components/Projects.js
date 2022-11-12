@@ -32,11 +32,11 @@ const Projects = () => {
                 checkout, test stripe payment and authenication. I like sneakers
                 so I decided to make it a shoe store. The application is
                 ongoing, so I'm working on adding a user page with all their
-                details and order, better error handling and using hooks so I
-                can add better animations. Stay tuned for updates. (Side note
-                the backend is hosted on a free heroku server so the first
-                request to the backend e.g viewing shoes might take a few
-                seconds)
+                details and order, better error handling, using hooks so I can
+                add better animations and using next.js for better performance
+                and SEO. Stay tuned for updates. (Side note the backend is
+                hosted on a free heroku server so the first request to the
+                backend e.g viewing shoes might take a few seconds)
               </p>
             </div>
             <a
@@ -52,9 +52,10 @@ const Projects = () => {
           </div>
           <div className="project-img">
             <motion.img
-              src="footprints.webp"
+              src="footprints.png"
               alt="footprints project"
               whileHover={{ scale: 1.05, boxShadow: "none" }}
+              whileTape={{ scale: 0.8, boxShadow: "none" }}
             />
           </div>
         </div>
@@ -74,16 +75,24 @@ const Projects = () => {
             </div>
             <div className="project-desc">
               <p>
-                This is the capstone project I did for the CS50 course. I choose
-                a weather website as it satisfied the requirement for the final
-                project and I wanted to improve my skills working with dynamic
-                single page web applications and APIs. On the website you can
+                This is the capstone project I did for the{" "}
+                <motion.a
+                  whileHover={{ scale: 1.2 }}
+                  whileTape={{ scale: 0.8 }}
+                  href="https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="color"
+                >
+                  CS50 course
+                </motion.a>
+                . I chose a weather as it satisfied the requirements for the
+                final project and I wanted to improve my skills working with
+                dynamic single page web applications and APIs. I have since
+                updated the application to use react. On the website you can
                 search for a city and see current weather and a forecast, switch
-                between units and switch between dark mode and light mode.
-              </p>
-              <p>
-                (Side note, this is hosted on a free heroku server so it will
-                take a seconds to spin up.)
+                between units and automatically switch between dark mode and
+                light mode depending on which mode your device/browser.
               </p>
             </div>
             <a
@@ -102,6 +111,7 @@ const Projects = () => {
               src="weather.png"
               alt="weather project"
               whileHover={{ scale: 1.05, boxShadow: "none" }}
+              whileTape={{ scale: 0.8, boxShadow: "none" }}
             />
           </div>
         </div>
@@ -126,10 +136,20 @@ const Projects = () => {
               <p>
                 This was my first react project, which is a social media site
                 where users post, like and view posts. It is based on one of the
-                projects from the CS50 web programming course, the challenge for
-                was to recreate the project using using an API instead of using
-                Django for front and backend. This meant using React, Django
-                rest and Knox for authenication.
+                projects from the{" "}
+                <motion.a
+                  href="https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript"
+                  target="_blank"
+                  rel="noreferrer"
+                  whileHover={{ scale: 1.2 }}
+                  whileTape={{ scale: 0.8 }}
+                  className="color"
+                >
+                  CS50 course
+                </motion.a>
+                , the challenge for me was to recreate the project using using
+                an API instead of using Django for the front and backend. This
+                meant using React, Django rest and Knox for authenication.
               </p>
             </div>
             <a
@@ -148,6 +168,7 @@ const Projects = () => {
               src="network.png"
               alt="network project"
               whileHover={{ scale: 1.05, boxShadow: "none" }}
+              whileTape={{ scale: 0.8, boxShadow: "none" }}
             />
           </div>
         </div>

@@ -22,9 +22,8 @@
 .line-3 {
     width: 10px;
 }
-.logo {
-    font-size: 24px;
-    letter-spacing: 3px;
+.logo svg{
+    height: 21px;
 }
 .navbar {
     position: fixed;
@@ -49,8 +48,8 @@
 .nav-lg {
     display: none;
 }
-.nav-lg .logo {
-    font-size: 35px;
+.nav-lg .logo svg {
+    height: 35px;
 }
 .nav-lg .nav-link {
     text-transform: uppercase;
@@ -61,6 +60,11 @@
 }
 .nav-lg .social-links div{
     margin: 0 0 0 10px;
+}
+@media (min-width: 768px) {
+    .logo svg{
+        height: 36px;
+    }
 }
 @media (min-width: 1024px) {
     .nav-lg {
