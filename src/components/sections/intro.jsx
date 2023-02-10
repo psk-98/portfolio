@@ -15,6 +15,7 @@ export default function Intro() {
       whileInView="visible"
       key={1}
       variants={appearVariants}
+      viewport={{ once: true }}
     >
       <div className={styles.intro}>
         <div className={`${styles.introName} color`}>{`Hi, I'm Paul`}</div>

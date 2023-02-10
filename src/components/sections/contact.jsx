@@ -12,6 +12,7 @@ export default function Contact({ setAlert, contactRef }) {
       ref={contactRef}
       whileInView="visible"
       initial="hidden"
+      viewport={{ once: true }}
     >
       <div className={styles.sectionHeader}>get in touch</div>
 

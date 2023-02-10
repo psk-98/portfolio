@@ -14,6 +14,7 @@ export default function Projects({ projectsRef }) {
       ref={projectsRef}
       whileInView="visible"
       initial="hidden"
+      viewport={{ once: true }}
     >
       <div className={styles.sectionHeader}>Projects</div>
       <div className={styles.projectsDisplay}>
@@ -74,6 +75,7 @@ export default function Projects({ projectsRef }) {
           whileInView="visible"
           initial="hidden"
           variants={appearVariants}
+          viewport={{ once: true }}
           style={{
             backgroundImage: `url(${weather.img}) `,
             backgroundRepeat: "no-repeat",

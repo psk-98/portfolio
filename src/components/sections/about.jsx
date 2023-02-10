@@ -13,6 +13,7 @@ export default function About({ aboutRef }) {
       ref={aboutRef}
       whileInView="visible"
       initial="hidden"
+      viewport={{ once: true }}
     >
       <motion.div variants={appearVariants} className={styles.sectionHeader}>
         About me
@@ -39,6 +40,7 @@ export default function About({ aboutRef }) {
           variants={appearVariants}
           whileInView="visible"
           initial="hidden"
+          viewport={{ once: true }}
         >
           {skills.map((skill, i) => {
             if (i % 2 === 0)
@@ -49,6 +51,7 @@ export default function About({ aboutRef }) {
                   whileInView="visible"
                   initial="hidden"
                   key={i}
+                  viewport={{ once: true }}
                 >
                   {skill}
                 </motion.div>
@@ -87,6 +90,7 @@ export default function About({ aboutRef }) {
                 stiffness: 400,
                 damping: 10,
               }}
+              viewport={{ once: true }}
             >
               my CV
               {fileSvg}
