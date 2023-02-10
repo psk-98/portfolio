@@ -21,7 +21,6 @@ export default function Nav({
         setToggle={setToggle}
       />
       <Sidebar
-        handleBurger={handleBurger}
         setToggle={setToggle}
         toggle={toggle}
         aboutInView={aboutInView}

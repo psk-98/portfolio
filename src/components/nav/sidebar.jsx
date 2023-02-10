@@ -4,7 +4,7 @@ import styles from "@/styles/Nav.module.css"
 import { motion } from "framer-motion"
 import { fileSvg } from "public/assets/svgs"
 
-export default function Sidebar({ toggle, handleBurger, setToggle }) {
+export default function Sidebar({ toggle, setToggle }) {
   return (
     <motion.div
       initial={false}
@@ -23,8 +23,7 @@ export default function Sidebar({ toggle, handleBurger, setToggle }) {
             whileTap="tap"
             onClick={() => {
               scroller(item)
-              setToggle(!toggle)
-              handleBurger()
+              setToggle(false)
             }}
           >
             {item}
