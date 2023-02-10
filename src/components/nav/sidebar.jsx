@@ -3,6 +3,7 @@ import { navList } from "@/data/data"
 import styles from "@/styles/Nav.module.css"
 import { motion } from "framer-motion"
 import { fileSvg } from "public/assets/svgs"
+import { scroller } from "./helpers"
 
 export default function Sidebar({ toggle, setToggle }) {
   return (
