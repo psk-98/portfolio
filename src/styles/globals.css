@@ -49,6 +49,7 @@ body {
   html,
   body {
     background: #1a1a1a;
+    scroll-behavior: smooth;
   }
 
   ::-webkit-scrollbar-track {
