@@ -1,4 +1,4 @@
-#Welcome to My [Portfolio Website](https://paulkhoza.netlify.app/)
+## Welcome to My [Portfolio Website](https://paulkhoza.netlify.app/)
 
 This website is built using [Next.js](https://nextjs.org/), a framework for building server-rendered React applications. It also utilizes [Framer Motion](https://www.framer.com/motion/) for animations, React-Intersection-Observer for tracking when elements enter and leave the viewport, and Prettier and ESLint for code formatting.
 
