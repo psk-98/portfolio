@@ -16,7 +16,7 @@ export const footprints = {
     "CSS",
   ],
   liveLink: "https://footprintz.netlify.app/",
-  gitLink: "https://github.com/psk-98/footprints/tree/hooks",
+  gitLink: "https://github.com/psk-98/footprints/tree/next",
 }
 
 export const weather = {

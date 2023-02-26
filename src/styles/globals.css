@@ -38,10 +38,12 @@ body {
 .loader svg {
   height: 4rem;
 }
-a:hover {
+a:hover,
+svg:hover {
   outline: none;
 }
-a:focus {
+a:focus,
+svg:focus {
   outline: none;
 }
 @media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
