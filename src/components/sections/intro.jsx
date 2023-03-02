@@ -5,6 +5,7 @@ import {
 } from "@/animation/sections"
 import styles from "@/styles/Home.module.css"
 import { motion } from "framer-motion"
+import { scroller } from "../nav/helpers"
 
 export default function Intro() {
   return (
