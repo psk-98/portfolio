@@ -4,7 +4,6 @@ import "@/styles/globals.css"
 export default function App({ Component, pageProps }) {
   return (
     <>
-      {console.log(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS)}
       <script
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
