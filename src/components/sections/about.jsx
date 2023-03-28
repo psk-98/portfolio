@@ -1,8 +1,8 @@
+import { appearVariants } from "@/animation/sections"
+import { backgroundPs, skills } from "@/data/data"
 import styles from "@/styles/Home.module.css"
 import { motion } from "framer-motion"
-import { appearVariants } from "@/animation/sections"
 import { fileSvg } from "public/assets/svgs"
-import { skills } from "@/data/data"
 
 export default function About({ aboutRef }) {
   return (
@@ -19,21 +19,8 @@ export default function About({ aboutRef }) {
         About me
       </motion.div>
       <motion.div variants={appearVariants} className={styles.background}>
-        <p>
-          I am final year student studying Intelligent Industrial Systems at
-          Tshwane University of Technology.
-        </p>
-        <p>
-          {`My web development journey started with the CS50's Web Programming
-            with Python and JavaScript course and ever since I've been working to be
-            the best developer I can be. I am self motivated, able to work
-            independtly or collabrativley.`}
-        </p>
-
-        <p>
-          {`When I'm not working, I'm playing video games or playing around with
-            some electronics.`}
-        </p>
+        <p>{backgroundPs[0]}</p>
+        <p>{backgroundPs[1]}</p>
         <p>Here are some technologies I use:</p>
         <motion.div
           className={styles.skillList}

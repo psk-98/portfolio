@@ -8,7 +8,7 @@ export default function Meta() {
         name="keywords"
         content="Paul Khoza, Web developer, Developer portfolio, Ecommerce developer, Web developer portfolio, Experienced full-stack developer, Frontend, Backend, React, Django, Figma, Framer Motion, Web3, Ethers, Pretoria, Developer, Nextjs, Freelance"
       />
-      <title>Paul Khoza | Portfolio</title>
+      <title>Paul Khoza</title>
       <meta
         name="description"
         content="Expert React and Django web developer in Pretoria, South Africa. Offering full-stack web development services using the latest technologies and best practices. Contact me for your next project."
