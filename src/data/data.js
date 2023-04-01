@@ -30,7 +30,6 @@ export const weather = {
     "Openweather API",
     "HTML",
     "CSS",
-    "Stripe",
   ],
   liveLink: "https://howztheweather.netlify.app/",
   gitLink: "https://github.com/psk-98/weather-app",

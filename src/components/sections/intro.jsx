@@ -21,7 +21,7 @@ export default function Intro() {
       <div className={styles.intro}>
         <div className={`${styles.introName} color`}>{`Hi, I'm Paul`}</div>
         <div className={styles.introDesc}>
-          I design and build dynamic, responsive websites
+          I design and build dynamic, responsive web apps
         </div>
         <motion.div
           className={`${styles.toContactBtn} btn`}
