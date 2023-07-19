@@ -44,7 +44,7 @@ export default function Sidebar({ toggle, setToggle }) {
         }}
       >
         <a
-          href="https://rxresu.me/khoza/web-dev"
+          href="https://rxresu.me/khoza/software"
           target="_blank"
           rel="noreferrer"
           aria-label="Link to my cv"

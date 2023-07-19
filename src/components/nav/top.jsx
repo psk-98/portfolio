@@ -30,7 +30,7 @@ export default function Top({
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
+      if (window.scrollY > lastScrollY && window.scrollY != 0) {
         // if scroll down hide the navbar
         setShow(false)
       } else {
@@ -95,7 +95,7 @@ export default function Top({
       </div>
       <div className={styles.socialLinks}>
         <a
-          href="https://rxresu.me/khoza/web-dev"
+          href="https://rxresu.me/khoza/software"
           target="_blank"
           rel="noreferrer"
           aria-label="Link to my resume"
