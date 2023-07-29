@@ -1,0 +1,101 @@
+.postsWrapper {
+  padding: 5rem 0 0 0;
+}
+.postCard {
+  width: 100%;
+  max-width: 100%;
+  height: fit-content fit-content;
+  margin: 5rem 0;
+}
+.section:nth-child(2) {
+  background: #000;
+}
+.postCard img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
+.postDetails div {
+  font-size: 1.5rem;
+}
+.postDetails {
+  display: flex;
+  padding: 2rem 0;
+  margin: 0 1.5rem;
+}
+.postDetails div:nth-child(2) {
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.postTitle {
+  font-size: 3rem;
+  color: #ffff00;
+  margin: 0 1.5rem;
+  padding: 0 0 2rem 0;
+}
+.headLine,
+.readMore div {
+  font-size: 1.5rem;
+  margin: 0 1.5rem;
+}
+.readMore div {
+  color: #ffff00;
+  padding: 1rem 0 3rem 0;
+  margin: 0;
+}
+
+/* post  */
+.postWrapper .postDetails {
+  padding: 5rem 0 0 0;
+  margin: 0;
+}
+.postWrapper .postTitle {
+  color: inherit;
+  margin: 2rem 0 3rem 0;
+  padding: 0;
+}
+.postWrapper .content p {
+  margin: 0 0 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .postDetails div {
+    font-size: 2.5rem;
+  }
+  .postTitle {
+    font-size: 6rem;
+  }
+  .headLine,
+  .readMore div {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .postCard {
+    display: flex;
+  }
+  .postCard .section {
+    width: 50%;
+    max-width: 50%;
+    background: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .postDetails,
+  .postTitle,
+  .headLine,
+  .readMore {
+    background: #000;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 0 0 2rem;
+  }
+  .postDetails {
+    padding: 2rem 0 0 2rem;
+  }
+}

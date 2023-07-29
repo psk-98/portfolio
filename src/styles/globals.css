@@ -46,6 +46,10 @@ a:focus,
 svg:focus {
   outline: none;
 }
+h3 {
+  font-size: 700;
+}
+
 @media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
   * {
     color: #eee;
@@ -56,14 +60,8 @@ svg:focus {
   body {
     background: #1a1a1a;
     scroll-behavior: smooth;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: none;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #ffff00;
+    scrollbar-width: thin;
+    scrollbar-color: #ffff00 transparent;
   }
 
   .section-selectors div,
@@ -71,12 +69,22 @@ svg:focus {
     border: 1px solid #ffff00;
   }
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: #eee;
-  }
-
   .color {
     color: #ffff00;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1rem;
+    height: 0;
+  }
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ffff00;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #eee;
   }
 }
 

@@ -7,6 +7,8 @@ import {
 } from "@/animation/nav"
 import styles from "@/styles/Nav.module.css"
 import { motion } from "framer-motion"
+import Link from "next/link"
+import { useRouter } from "next/router"
 import {
   emailSvg,
   fileSvg,
@@ -42,6 +44,7 @@ export default function Top({
       setLastScrollY(window.scrollY)
     }
   }
+  const router = useRouter()
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -62,36 +65,63 @@ export default function Top({
     >
       <div className={styles.logo}>{logo}</div>
       <div className={styles.navLinks}>
-        <motion.div
-          className={styles.navLink}
-          variants={navLinkVariants}
-          animate={projectsInView ? "active" : "open"}
-          whileHover="hover"
-          whileTap="tap"
-          onClick={() => scroller("projects")}
-        >
-          projects
-        </motion.div>
-        <motion.div
-          className={styles.navLink}
-          variants={navLinkVariants}
-          animate={aboutInView ? "active" : "open"}
-          whileHover="hover"
-          whileTap="tap"
-          onClick={() => scroller("about")}
-        >
-          About
-        </motion.div>
-        <motion.div
-          className={styles.navLink}
-          variants={navLinkVariants}
-          animate={contactInView ? "active" : "open"}
-          whileHover="hover"
-          whileTap="tap"
-          onClick={() => scroller("contact")}
-        >
-          contact
-        </motion.div>
+        <Link href={"/blog"}>
+          <motion.div
+            className={styles.navLink}
+            variants={navLinkVariants}
+            whileHover="hover"
+            whileTap="tap"
+          >
+            blog
+          </motion.div>
+        </Link>
+        {router.pathname.includes("/blog") ? (
+          <>
+            <Link href={"/"}>
+              <motion.div
+                className={styles.navLink}
+                variants={navLinkVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                portfolio
+              </motion.div>
+            </Link>
+          </>
+        ) : (
+          <>
+            <motion.div
+              className={styles.navLink}
+              variants={navLinkVariants}
+              animate={projectsInView ? "active" : "open"}
+              whileHover="hover"
+              whileTap="tap"
+              onClick={() => scroller("projects")}
+            >
+              projects
+            </motion.div>
+            <motion.div
+              className={styles.navLink}
+              variants={navLinkVariants}
+              animate={aboutInView ? "active" : "open"}
+              whileHover="hover"
+              whileTap="tap"
+              onClick={() => scroller("about")}
+            >
+              About
+            </motion.div>
+            <motion.div
+              className={styles.navLink}
+              variants={navLinkVariants}
+              animate={contactInView ? "active" : "open"}
+              whileHover="hover"
+              whileTap="tap"
+              onClick={() => scroller("contact")}
+            >
+              contact
+            </motion.div>
+          </>
+        )}
       </div>
       <div className={styles.socialLinks}>
         <a
@@ -120,7 +150,12 @@ export default function Top({
         </a>
         <div onClick={() => setAlert(true)}>{emailSvg}</div>
       </div>
-      <div className={styles.burger} onClick={() => setToggle(!toggle)}>
+      <div
+        className={styles.burger}
+        onClick={() => {
+          setToggle(!toggle)
+        }}
+      >
         <motion.div
           variants={line1Variants}
           className={styles.line}

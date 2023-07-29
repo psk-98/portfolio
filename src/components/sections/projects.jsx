@@ -8,7 +8,7 @@ import { footprints, weather } from "@/data/data"
 export default function Projects({ projectsRef }) {
   return (
     <motion.div
-      className={styles.projectsSection}
+      className={styles.projectsSection} 
       id="projects"
       variants={appearVariants}
       ref={projectsRef}

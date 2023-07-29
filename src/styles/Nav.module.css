@@ -35,7 +35,13 @@
   height: 2rem;
 }
 .navLink:nth-child(2) {
-  margin: 0 9rem;
+  margin: 0 6rem;
+}
+.navLink:nth-child(3) {
+  margin: 0 6rem 0 0;
+}
+.navLinks a:nth-child(2) {
+  margin: 0 0 0 9rem;
 }
 .navLink {
   text-transform: uppercase;
