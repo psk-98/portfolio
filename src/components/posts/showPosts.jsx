@@ -15,15 +15,10 @@ export default function ShowPosts({ posts }) {
     setInitialRenderComplete(true)
   }, [])
 
-  useEffect(() => {
-    setWindow(isLargerWindow())
-    console.log("is running")
-  }, [window?.innerWidth])
-
   return (
     initialRenderComplete &&
     posts.map((post, i) => {
-      return isLargerWindowState && i % 2 != 0 ? (
+      return isLargerWindow() && i % 2 != 0 ? (
         <Link
           className={styles.postCard}
           key={i}
