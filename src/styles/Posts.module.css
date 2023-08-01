@@ -1,5 +1,5 @@
 .postsWrapper {
-  padding: 5rem 0 0 0;
+  padding: 3rem 0 0 0;
 }
 .postCard {
   width: 100%;
@@ -7,14 +7,19 @@
   height: fit-content fit-content;
   margin: 5rem 0;
 }
-.section:nth-child(2) {
+.section {
+  margin: 0;
   background: #000;
+}
+.section:nth-child(2) {
+  padding: 0 1.5rem;
 }
 .postCard img {
   width: 100%;
   height: 100%;
-  aspect-ratio: 2/1;
+  aspect-ratio: 4/3;
   object-fit: cover;
+  display: none;
 }
 .postDetails div {
   font-size: 1.5rem;
@@ -22,7 +27,6 @@
 .postDetails {
   display: flex;
   padding: 2rem 0;
-  margin: 0 1.5rem;
 }
 .postDetails div:nth-child(2) {
   margin: 0 2rem;
@@ -31,23 +35,18 @@
   align-items: center;
 }
 .postTitle {
-  font-size: 3rem;
-  color: #ffff00;
-  margin: 0 1.5rem;
-  padding: 0 0 2rem 0;
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
 }
 .headLine,
-.readMore div {
+.readMore a {
   font-size: 1.5rem;
-  margin: 0 1.5rem;
 }
-.readMore div {
-  color: #ffff00;
-  padding: 1rem 0 3rem 0;
-  margin: 0;
+.readMore {
+  padding: 1.5rem 0 3rem 0;
 }
 
-/* post  */
+/* post 
 .postWrapper .postDetails {
   padding: 5rem 0 0 0;
   margin: 0;
@@ -59,17 +58,27 @@
 }
 .postWrapper .content p {
   margin: 0 0 3rem 0;
-}
+} */
 
 @media (min-width: 768px) {
+  .postsWrapper {
+    padding: 5rem 0 0 0;
+  }
+  .section:nth-child(2) {
+    padding: 4rem 3rem;
+  }
+  .postCard {
+    margin: 7rem 0;
+  }
   .postDetails div {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .postTitle {
-    font-size: 6rem;
+    font-size: 5rem;
+    margin: 0 0 4rem 0;
   }
   .headLine,
-  .readMore div {
+  .readMore a {
     font-size: 3rem;
   }
 }
@@ -80,22 +89,53 @@
   .postCard .section {
     width: 50%;
     max-width: 50%;
-    background: none !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: none !important;
+    padding: 0;
+  }
+  .postCard img {
+    display: block;
   }
   .postDetails,
   .postTitle,
   .headLine,
   .readMore {
     background: #000;
-    width: 100%;
+    margin: 0;
+    padding: 0 2rem;
+  }
+  .postDetails,
+  .headLine {
+    padding: 2rem;
+  }
+  .readMore {
+    padding: 0 2rem 3rem 2rem;
+  }
+
+  /* .postCard {
+    display: flex;
+  }
+  .postCard .section {
+    width: 50%;
+    max-width: 50%;
+    background: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  .postDetails,
+  .postTitle,
+  .headLine,
+  .readMore {
+    background: #000;
     max-width: 100%;
     margin: 0;
-    padding: 0 0 0 2rem;
+    padding: 0 2rem;
   }
   .postDetails {
     padding: 2rem 0 0 2rem;
-  }
+  } */
 }

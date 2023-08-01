@@ -38,9 +38,10 @@
   justify-content: center;
   height: 5rem;
   width: 20rem;
-  border: 1px solid #eee;
+  border: 1px solid #ffff00;
   box-shadow: #ffff00 4px 4px;
 }
+
 .scrollDeco {
   position: absolute;
   bottom: 5vh;
@@ -96,6 +97,7 @@
   padding: 0 1rem;
   margin: 0 1rem 1rem 0;
   color: #1a1a1a;
+  font-weight: 400;
   background: none;
   border: #1a1a1a 1px solid;
   box-shadow: #1a1a1a 2px 2px;
@@ -125,28 +127,26 @@
 .background p:nth-child(3) {
   margin: 2rem 0 3rem 0;
 }
-.background .skillBlock,
-.contactSection form button {
+.background .skillBlock {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   height: 3rem;
   padding: 0 1rem;
   margin: 0 1.5rem 1.5rem 0;
-  color: #000;
   letter-spacing: 1px;
-  background: #ffff00;
-  box-shadow: #eee 3px 3px;
+  border: 1px solid #ffff00;
+  box-shadow: #ffff00 3px 3px;
 }
 .cvBtn {
   margin: 6rem 0 0 0;
 }
 .cvBtn svg {
   margin: 0 0 0 1rem;
-  stroke: #eee;
+  stroke: #ffff00;
   height: 1.75rem;
 }
 .socialLinks {
@@ -179,7 +179,7 @@
   border: 1px solid #eee;
   border-radius: 0;
   background: none;
-  padding: 0 1rem;
+  padding: 0.25rem 1rem;
   height: 4rem;
   margin: 1rem 0;
   min-width: 90%;
@@ -189,7 +189,7 @@
 .contactSection form input:focus,
 .contactSection form textarea:focus {
   outline: none;
-  border: 2px solid #fff;
+  border: 2px solid #ffff00;
 }
 .contactSection form input::placeholder,
 .contactSection form textarea::placeholder {
@@ -199,12 +199,16 @@
   height: 25rem;
 }
 .contactSection form button {
+  color: #ffff00;
   margin: 2rem 0 0 0;
   height: 4rem;
   width: 10rem;
   font-size: 2rem;
   border: none;
-  font-weight: 600;
+  font-weight: 500;
+  background: none;
+  border: 1px solid #ffff00;
+  box-shadow: #ffff00 4px 4px;
 }
 
 @media (min-width: 768px) {
@@ -220,7 +224,6 @@
   .cvBtn {
     height: 8rem;
     width: 34rem;
-    border: 1px solid #eee;
     box-shadow: #ffff00 6px 6px;
   }
   .scrollDeco {
@@ -276,7 +279,7 @@
     height: 6rem;
     padding: 0 1.25rem;
     margin: 0 2rem 2rem 0;
-    box-shadow: #eee 4px 4px;
+    box-shadow: #ffff00 4px 4px;
   }
   .cvBtn {
     margin: 9rem 0 0 0;
@@ -315,6 +318,7 @@
     height: 6rem;
     width: 15rem;
     font-size: 3rem;
+    background: none;
   }
 }
 @media (min-width: 1024px) {
@@ -358,10 +362,9 @@
     font-size: 3rem;
     height: 4rem;
     margin: 0 1.5rem 1.5rem 0;
-    border: none;
-    color: #1a1a1a;
-    background: #ffff00;
-    box-shadow: #eee 2px 2px;
+    color: #ffff00;
+    border: 1px solid #ffff00;
+    box-shadow: #ffff00 2px 2px;
   }
   .projectDisplay svg {
     stroke: #ffff00;

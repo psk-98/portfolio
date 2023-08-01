@@ -1,8 +1,7 @@
-import { appearVariants } from "@/animation/sections"
+import { appearVariants, btnYellowVariants } from "@/animation/sections"
 import { backgroundPs, skills } from "@/data/data"
 import styles from "@/styles/Home.module.css"
 import { motion } from "framer-motion"
-import { fileSvg } from "public/assets/svgs"
 
 export default function About({ aboutRef }) {
   return (
@@ -33,7 +32,7 @@ export default function About({ aboutRef }) {
             if (i % 2 === 0)
               return (
                 <motion.div
-                  className={styles.skillBlock}
+                  className={styles.skillBlock + " color"}
                   variants={appearVariants}
                   whileInView="visible"
                   initial="hidden"
@@ -45,7 +44,7 @@ export default function About({ aboutRef }) {
               )
             else
               return (
-                <div className={styles.skillBlock} key={i}>
+                <div className={styles.skillBlock + " color"} key={i}>
                   {skill}
                 </div>
               )
@@ -59,28 +58,30 @@ export default function About({ aboutRef }) {
           >
             <motion.div
               id="my cv"
-              className={`${styles.cvBtn} btn`}
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              whileInView={{ opacity: 1, y: 0 }}
-              whileHover={{ boxShadow: "none", scale: 1.05 }}
-              whileTape={{ scale: 0.9 }}
-              transition={{
-                y: {
-                  type: "linear",
-                  delay: 0.5,
-                  duration: 1,
-                },
-                type: "spring",
-                stiffness: 400,
-                damping: 10,
-              }}
+              className={`${styles.cvBtn} btn color`}
+              variants={btnYellowVariants}
+              whileHover="hover"
+              whileTape="tap"
+              // initial={{
+              //   opacity: 0,
+              //   y: 20,
+              // }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // whileHover={{ boxShadow: "none", scale: 1.05 }}
+              // whileTape={{ scale: 0.9 }}
+              // transition={{
+              //   y: {
+              //     type: "linear",
+              //     delay: 0.5,
+              //     duration: 1,
+              //   },
+              //   type: "spring",
+              //   stiffness: 400,
+              //   damping: 10,
+              // }}
               viewport={{ once: true }}
             >
               my CV
-              {fileSvg}
             </motion.div>
           </a>
         </div>

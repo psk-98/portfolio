@@ -19,7 +19,7 @@ export default function Sidebar({ toggle, setToggle }) {
     >
       <motion.div
         className={styles.sideItem}
-        key={4}
+        key={1}
         variants={navLinkVariants}
         animate={toggle ? "open" : "closed"}
         whileHover="hover"
@@ -49,7 +49,7 @@ export default function Sidebar({ toggle, setToggle }) {
                 {item}
               </motion.div>
             )
-          })}{" "}
+          })}
           <motion.div
             className={styles.sideItem}
             key={4}
@@ -75,7 +75,7 @@ export default function Sidebar({ toggle, setToggle }) {
         <>
           <motion.div
             className={styles.sideItem}
-            key={4}
+            key={2}
             variants={navLinkVariants}
             animate={toggle ? "open" : "closed"}
             whileHover="hover"
@@ -88,7 +88,7 @@ export default function Sidebar({ toggle, setToggle }) {
           </motion.div>
           <motion.div
             className={styles.sideItem}
-            key={4}
+            key={3}
             variants={navLinkVariants}
             animate={toggle ? "open" : "closed"}
             whileHover="hover"

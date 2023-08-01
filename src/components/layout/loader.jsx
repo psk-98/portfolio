@@ -1,10 +1,10 @@
 import { motion } from "framer-motion"
 
 const svgVariants = {
-  hidden: { rotate: -360 },
+  hidden: { rotate: -180 },
   visible: {
     rotate: 0,
-    transition: { duration: 1, staggerChildren: 0.4, delayChildren: 0.2 },
+    transition: { duration: 1, staggerChildren: 0.2, delayChildren: 0.2 },
   },
   exit: {
     opacity: 0,
@@ -20,7 +20,7 @@ const pathVariants = {
     opacity: 1,
     pathLength: 1,
     transition: {
-      duration: 2,
+      duration: 0.5,
       type: "linear",
     },
   },

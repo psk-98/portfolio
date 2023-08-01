@@ -13,7 +13,7 @@
 }
 .postTitle {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0 0 4rem 0;
 }
 .coverImage {
@@ -21,10 +21,23 @@
 }
 .paraHeading {
   font-weight: 700;
+  font-size: 2.5rem;
   margin: 0 0 3rem 0;
+}
+.paragraphs span {
+  font-size: 2rem;
 }
 .paragraphs {
   margin: 0 0 4rem 0;
+  font-size: 2rem;
+}
+.paragraphs,
+.content li,
+.content a {
+  font-size: 2rem;
+}
+.content a {
+  cursor: pointer;
 }
 .codeBlocks {
   background: #000;
@@ -37,7 +50,10 @@
   scrollbar-width: thin;
   scrollbar-color: #ffff00 transparent;
 }
-
+.codeBlocks span,
+.codeBlocks > * {
+  font-size: 1.5rem;
+}
 .codeBlocks::-webkit-scrollbar {
   height: 1rem;
   width: 0;
@@ -52,4 +68,35 @@
   padding: 0.5rem 2rem 1rem 2rem;
   text-transform: uppercase;
   font-size: 1.5rem;
+}
+.content li {
+  margin: 0 0 1rem 1rem;
+}
+.content li:first-child {
+  margin: 0 0 3rem 0;
+}
+.content li:last-child {
+  margin: 0 0 5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    max-width: 700px;
+  }
+  /* .postDetails div {
+    font-size: 2rem;
+  }
+  .postTitle {
+    font-size: 5rem;
+  }
+  .paraHeading {
+    font-size: 3.75rem;
+  }
+  .paragraphs {
+    font-size: 3.75rem;
+  }
+  .codeBlocks span,
+  .codeBlocks > * {
+    font-size: 2rem;
+  } */
 }

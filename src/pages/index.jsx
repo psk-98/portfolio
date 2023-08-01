@@ -1,6 +1,6 @@
+import Layout from "@/components/layout/Layout"
 import Alert from "@/components/layout/alert"
 import Loader from "@/components/layout/loader"
-import Nav from "@/components/nav/nav"
 import About from "@/components/sections/about"
 import Contact from "@/components/sections/contact"
 import Intro from "@/components/sections/intro"
@@ -19,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 3500)
+    }, 2000)
   }, [])
 
   useEffect(() => {
@@ -33,19 +33,18 @@ export default function Home() {
       {loading ? (
         <Loader />
       ) : (
-        <>
+        <Layout
+          setAlert={setAlert}
+          aboutInView={aboutInView}
+          projectsInView={projectsInView}
+          contactInView={contactInView}
+        >
           <Alert isAlert={isAlert} />
-          <Nav
-            setAlert={setAlert}
-            aboutInView={aboutInView}
-            projectsInView={projectsInView}
-            contactInView={contactInView}
-          />
           <Intro />
           <Projects projectsRef={projectsRef} />
           <About aboutRef={aboutRef} />
           <Contact setAlert={setAlert} contactRef={contactRef} />
-        </>
+        </Layout>
       )}
     </AnimatePresence>
   )

@@ -1,6 +1,6 @@
+import { appearVariants, btnYellowVariants } from "@/animation/sections"
 import styles from "@/styles/Home.module.css"
 import { motion } from "framer-motion"
-import { appearVariants } from "@/animation/sections"
 import { emailSvg, gitLogo, linkedLogo } from "public/assets/svgs"
 
 export default function Contact({ setAlert, contactRef }) {
@@ -75,11 +75,14 @@ export default function Contact({ setAlert, contactRef }) {
           <motion.button
             className="btn"
             type="submit"
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "none",
-            }}
-            whileTap={{ scale: 0.8, boxShadow: "none" }}
+            // whileHover={{
+            //   scale: 1.05,
+            //   boxShadow: "none",
+            // }}
+            // whileTap={{ scale: 0.8, boxShadow: "none" }}
+            variants={btnYellowVariants}
+            whileHover="hover"
+            whileTape="tap"
           >
             Send
           </motion.button>

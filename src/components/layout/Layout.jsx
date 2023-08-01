@@ -1,6 +1,9 @@
 import { Montserrat } from "@next/font/google"
+import { motion } from "framer-motion"
 import Nav from "../nav/nav"
 import Meta from "./Meta"
+
+import { containerVariants } from "@/animation/routes"
 import Footer from "./footer"
 
 const montserrat = Montserrat({
@@ -23,9 +26,16 @@ export default function Layout({
         projectsInView={projectsInView}
         contactInView={contactInView}
       />
-      <div className="container" style={{ overflow: "hidden" }}>
+      <motion.div
+        className="container"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        style={{ overflow: "hidden" }}
+      >
         {children}
-      </div>
+      </motion.div>
       <Footer />
     </div>
   )

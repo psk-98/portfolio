@@ -4,6 +4,7 @@ export const btnYellowVariants = {
     boxShadow: "none",
     background: ["none", "#ffff00"],
     color: "#000",
+    border: "none",
     transition: {
       type: "spring",
       stiffness: 400,

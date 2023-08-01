@@ -24,10 +24,9 @@ export default function Intro() {
           I design and build dynamic, responsive web apps
         </div>
         <motion.div
-          className={`${styles.toContactBtn} btn`}
+          className={`${styles.toContactBtn} btn color`}
           onClick={() => scroller("contact")}
           variants={btnYellowVariants}
-          initial="initial"
           whileHover="hover"
           whileTape="tap"
         >

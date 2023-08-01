@@ -1,8 +1,13 @@
+import Layout from "@/components/layout/Layout"
 import ShowPosts from "@/components/posts/showPosts"
 import { getAllPosts } from "utils/mdx"
 
 export default function Posts({ posts }) {
-  return <ShowPosts posts={posts} />
+  return (
+    <Layout>
+      <ShowPosts posts={posts} />
+    </Layout>
+  )
 }
 //
 export const getStaticProps = async () => {

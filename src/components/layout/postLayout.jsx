@@ -10,7 +10,7 @@ export default function PostLayout({ children, title, coverImage, headLine }) {
         <meta name="description" content={headLine} />
         <meta name="image" content={coverImage} />
       </Head>
-      {children}
+      <div className="blog_post">{children}</div>
     </>
   )
 }

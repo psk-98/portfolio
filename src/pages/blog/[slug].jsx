@@ -1,9 +1,12 @@
+import Layout from "@/components/layout/Layout"
 import PostLayout from "@/components/layout/postLayout"
 import {
+  Anchors,
   CodeBlocks,
   Heading,
+  ListItem,
   Paragraphs,
-} from "@/components/posts/simplePostComponents"
+} from "@/components/post/simplePostComponents"
 import styles from "@/styles/Post.module.css"
 import dayjs from "dayjs"
 import fs from "fs"
@@ -24,41 +27,49 @@ export default function BlogPost({ source, frontmatter, readingTime }) {
   const { title, publishedAt, headLine, coverImage } = frontmatter
 
   return (
-    <PostLayout title={title} headLine={headLine} coverImage={coverImage}>
-      <div className={styles.postWrapper}>
-        <div className={styles.postDetails}>
-          <div>{dayjs(publishedAt).format("D MMM YYYY")}</div>
-          <div>
-            <svg
-              width={3}
-              height={3}
-              viewBox="0 0 2 2"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx={1} cy={1} r={1} fill="#eee" />
-            </svg>
+    <Layout>
+      <PostLayout title={title} headLine={headLine} coverImage={coverImage}>
+        <div className={styles.postWrapper}>
+          <div className={styles.postDetails}>
+            <div>{dayjs(publishedAt).format("D MMM YYYY")}</div>
+            <div>
+              <svg
+                width={3}
+                height={3}
+                viewBox="0 0 2 2"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx={1} cy={1} r={1} fill="#eee" />
+              </svg>
+            </div>
+            <div>{readingTime}</div>
           </div>
-          <div>{readingTime}</div>
+          <div className={`${styles.postTitle} color`}>{title}</div>
+          <div className={styles.coverImage}>
+            <Image
+              src={coverImage}
+              width={800}
+              height={600}
+              alt={"image"}
+              priority
+            />
+          </div>
+          <div className={styles.content}>
+            <MDXRemote
+              {...source}
+              components={{
+                h3: Heading,
+                p: Paragraphs,
+                pre: CodeBlocks,
+                a: Anchors,
+                li: ListItem,
+              }}
+            />
+          </div>
         </div>
-        <div className={`${styles.postTitle} color`}>{title}</div>
-        <div className={styles.coverImage}>
-          <Image
-            src={coverImage}
-            width={800}
-            height={600}
-            alt={"image"}
-            priority
-          />
-        </div>
-        <div className={styles.content}>
-          <MDXRemote
-            {...source}
-            components={{ h3: Heading, p: Paragraphs, pre: CodeBlocks }}
-          />
-        </div>
-      </div>
-    </PostLayout>
+      </PostLayout>
+    </Layout>
   )
 }
 

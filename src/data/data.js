@@ -60,6 +60,6 @@ const pOne =
   "I’m full stack web developer based in Pretoria, South Africa, I develop a wide range of applications including ecommerce. From design to deployment, my goal is to deliver high-quality applications that meet your business needs."
 
 const pTwo =
-  "My journey in web development began with the CS50's Web Programming with Python and JavaScript course. Since then, I have continued to improve my skills and expand my knowledge through self-learning and practical experience. I am highly motivated and have a strong work ethic that allows me to work effectively both independently and collaboratively, depending on the project requirements. My passion for web development drives me to stay up to date with the latest industry trends and technologies, and to constantly improve my abilities in order to deliver top quality solutions ."
+  "My journey in web development began with the CS50's Web Programming with Python and JavaScript course. Since then, I have continued to improve my skills and expand my knowledge through self-learning and practical experience. I am highly motivated and have a strong work ethic that allows me to work effectively both independently and collaboratively, depending on the project requirements. My passion for web development drives me to stay up to date with the latest industry trends and technologies, and to constantly improve my abilities in order to deliver top quality solutions."
 
 export const backgroundPs = [pOne, pTwo]

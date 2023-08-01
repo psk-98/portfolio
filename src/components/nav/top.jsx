@@ -63,7 +63,9 @@ export default function Top({
       animate={show || toggle ? "visible" : "hidden"}
       variants={navVariants}
     >
-      <div className={styles.logo}>{logo}</div>
+      <div className={styles.logo}>
+        <Link href={"/"}>{logo}</Link>
+      </div>
       <div className={styles.navLinks}>
         <Link href={"/blog"}>
           <motion.div

@@ -98,6 +98,10 @@ h3 {
   .loader svg {
     height: 6rem;
   }
+  .blog_post {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (min-width: 1024px) {
   * {
