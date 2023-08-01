@@ -88,7 +88,7 @@ export function ImageRight({ post, i }) {
             height={800}
             priority
             placeholder="blur"
-            blurDataURL={placeholder}
+            blurDataURL={placeholder} //blur
           />
         </div>
       </div>
