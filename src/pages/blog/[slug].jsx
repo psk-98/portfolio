@@ -42,7 +42,7 @@ export default function BlogPost({ source, frontmatter, readingTime }) {
           description: headLine,
           images: [
             {
-              url: "/media/apple-touch-icon.png",
+              url: coverImage,
               width: 800,
               height: 420,
               alt: "Paul Khoza",
