@@ -63,3 +63,8 @@ const pTwo =
   "My journey in web development began with the CS50's Web Programming with Python and JavaScript course. Since then, I have continued to improve my skills and expand my knowledge through self-learning and practical experience. I am highly motivated and have a strong work ethic that allows me to work effectively both independently and collaboratively, depending on the project requirements. My passion for web development drives me to stay up to date with the latest industry trends and technologies, and to constantly improve my abilities in order to deliver top quality solutions."
 
 export const backgroundPs = [pOne, pTwo]
+
+export const metaDescriptions = [
+  "Expert React and Django web developer in Pretoria, South Africa. Offering full-stack web development services using the latest technologies and best practices. Contact me for your next project.",
+  "A web development focused blog by Paul Khoza, the articles are based on problems I encounter and how are solve them",
+]

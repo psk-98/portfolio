@@ -4,6 +4,8 @@ import Nav from "../nav/nav"
 import Meta from "./Meta"
 
 import { containerVariants } from "@/animation/routes"
+import { NextSeo } from "next-seo"
+import { useRouter } from "next/router"
 import Footer from "./footer"
 
 const montserrat = Montserrat({
@@ -17,8 +19,17 @@ export default function Layout({
   projectsInView,
   contactInView,
 }) {
+  const router = useRouter()
+  console.log(router)
   return (
     <div className={montserrat.className}>
+      <NextSeo
+        twitter={{
+          handle: "@paul_sinci",
+          site: "@paul_sinci",
+          cardType: "summary_large_image",
+        }}
+      />
       <Meta />
       <Nav
         setAlert={setAlert}
