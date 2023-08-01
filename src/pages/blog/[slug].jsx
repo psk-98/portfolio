@@ -36,6 +36,19 @@ export default function BlogPost({ source, frontmatter, readingTime }) {
         title={title}
         description={headLine}
         canonical={`https://paulkhoza.netlify.app${router.pathname}`}
+        openGraph={{
+          url: `https://paulkhoza.netlify.app${router.pathname}`,
+          title: title,
+          description: headLine,
+          images: [
+            {
+              url: "/media/apple-touch-icon.png",
+              width: 800,
+              height: 420,
+              alt: "Paul Khoza",
+            },
+          ],
+        }}
       />
       <Layout>
         <PostLayout title={title} headLine={headLine} coverImage={coverImage}>

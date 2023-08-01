@@ -38,6 +38,19 @@ export default function Home() {
         title="Paul Khoza | Portfolio"
         description={metaDescriptions[0]}
         canonical={`https://paulkhoza.netlify.app${router.pathname}`}
+        openGraph={{
+          url: "https://paulkhoza.netlify.app",
+          title: "Paul Khoza",
+          description: metaDescriptions[0],
+          images: [
+            {
+              url: "/media/apple-touch-icon.png",
+              width: 800,
+              height: 420,
+              alt: "Paul Khoza",
+            },
+          ],
+        }}
       />
       {loading ? (
         <Loader />

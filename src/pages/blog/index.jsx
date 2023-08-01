@@ -14,6 +14,19 @@ export default function Posts({ posts }) {
         title="Paul Khoza | Latest Articles"
         description={metaDescriptions[1]}
         canonical={`https://paulkhoza.netlify.app${router.pathname}`}
+        openGraph={{
+          url: `https://paulkhoza.netlify.app${router.pathname}`,
+          title: "Paul Khoza's Blog",
+          description: metaDescriptions[1],
+          images: [
+            {
+              url: "/media/apple-touch-icon.png",
+              width: 800,
+              height: 420,
+              alt: "Paul Khoza",
+            },
+          ],
+        }}
       />
       <Layout>
         <ShowPosts posts={posts} />
