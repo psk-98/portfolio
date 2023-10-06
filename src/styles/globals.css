@@ -1,0 +1,135 @@
+:root {
+  --dark-color: #1a1a1a;
+  --darkest-color: #000;
+  --light-color: #eee;
+  --lightest-color: #fff;
+  --gradient: linear-gradient(
+    94deg,
+    #ff0 -3.61%,
+    #ffb800 41.59%,
+    #ff8a00 97.35%
+  );
+}
+
+html,
+body {
+  font-size: 8px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  scrollbar-width: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.container {
+  max-width: 100vw;
+  min-height: 92vh;
+  margin: 8vh 5rem 0 5rem;
+}
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--accent-font), sans-serif;
+  font-weight: 500;
+  height: 5rem;
+  width: 20rem;
+}
+.loader {
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.loader svg {
+  height: 10rem;
+}
+a:hover,
+svg:hover {
+  outline: none;
+}
+a:focus,
+svg:focus {
+  outline: none;
+}
+h3 {
+  font-size: 700;
+}
+
+@media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
+  * {
+    color: var(--light-color);
+    scrollbar-color: var(--gradient);
+  }
+
+  html,
+  body {
+    background: var(--dark-color);
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gradient) transparent;
+  }
+
+  .section-selectors div,
+  .form-success a {
+    border: 1px solid #ffff00;
+  }
+
+  .color {
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1rem;
+    height: 0;
+  }
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--gradient);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--light-color);
+  }
+}
+
+@media (min-width: 768px) {
+  * {
+    font-size: 4rem;
+  }
+  .container {
+    margin: 8vh 7rem 0 7rem;
+  }
+  .loader svg {
+    height: 20rem;
+  }
+  .blog_post {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin: 8vh 10rem 0 10rem;
+  }
+  .loader svg {
+    height: 8rem;
+  }
+}

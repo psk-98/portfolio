@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 7.5rem 0 3.75rem 0;
+  padding: 0 0 2.5rem 0;
+}
+.socialLinks {
+  display: flex;
+  margin: 1rem 0 0 0;
+}
+.socialLinks svg {
+  height: 2.5rem;
+}
+.socialLink {
+  margin: 1rem;
+}
+.copyrightSec {
+  font-size: 9px;
+}
+
+@media (min-width: 768px) {
+  .socialLinks svg {
+    height: 3.5rem;
+  }
+}
+@media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
+  .socialLinks svg {
+    stroke: url(#my-gradient);
+  }
+}
