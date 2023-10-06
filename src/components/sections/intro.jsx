@@ -5,8 +5,8 @@ import {
 } from "@/animation/sections"
 import styles from "@/styles/Home.module.css"
 import { motion } from "framer-motion"
-import { scroller } from "../nav/helpers"
 import { gradient, oppositeGradient } from "utils/colors"
+import { scroller } from "../nav/helpers"
 
 export default function Intro() {
   return (
@@ -31,7 +31,7 @@ export default function Intro() {
           whileHover="hover"
           whileTape="tap"
         >
-          Let's chat
+          {"Let's chat"}
         </motion.div>
         <motion.div
           className={styles.scrollDeco}

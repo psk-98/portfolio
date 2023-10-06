@@ -14,7 +14,7 @@ export default function Contact({ setAlert, contactRef }) {
       initial="hidden"
       viewport={{ once: true }}
     >
-      <div className={styles.sectionHeader}>let's chat</div>
+      <div className={styles.sectionHeader}>{"let's chat"}</div>
 
       <div className={styles.socialLinks}>
         <motion.div whileHover={{ scale: 1.2 }} whileTape={{ scale: 0.8 }}>
