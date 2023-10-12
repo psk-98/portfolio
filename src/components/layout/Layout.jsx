@@ -26,7 +26,6 @@ export default function Layout({
   contactInView,
 }) {
   const router = useRouter()
-  console.log(router)
   return (
     <>
       <div className={pontanoSans.className}>

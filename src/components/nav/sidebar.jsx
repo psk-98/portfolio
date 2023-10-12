@@ -17,21 +17,16 @@ export default function Sidebar({ toggle, setToggle }) {
       animate={toggle ? "open" : "closed"}
       variants={sidebarVariants}
     >
-      <Link href={"/blog"}>
-        <motion.div
-          className={styles.sideItem}
-          key={1}
-          variants={navLinkVariants}
-          animate={toggle ? "open" : "closed"}
-          whileHover="hover"
-          whileTap="tap"
-          onClick={() => {
-            setToggle(!toggle)
-          }}
-        >
-          blog
-        </motion.div>
-      </Link>
+      <motion.div
+        className={styles.sideItem}
+        key={1}
+        variants={navLinkVariants}
+        onClick={() => {
+          setToggle(!toggle)
+        }}
+      >
+        <Link href={"/blog"}>blog</Link>
+      </motion.div>
       {!router.pathname.includes("/blog") ? (
         <>
           {navList.map((item, index) => {
@@ -40,9 +35,6 @@ export default function Sidebar({ toggle, setToggle }) {
                 className={styles.sideItem}
                 key={index}
                 variants={navLinkVariants}
-                animate={toggle ? "open" : "closed"}
-                whileHover="hover"
-                whileTap="tap"
                 onClick={() => {
                   scroller(item)
                   setToggle(false)
@@ -52,44 +44,44 @@ export default function Sidebar({ toggle, setToggle }) {
               </motion.div>
             )
           })}
-          <a
-            href="https://rxresu.me/khoza/software"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Link to my cv"
+
+          <motion.div
+            className={styles.sideItem}
+            key={4}
+            variants={navLinkVariants}
+            // animate={toggle ? "open" : "closed"}
+            // whileHover="hover"
+            // whileTap="tap"
+            onClick={() => {
+              setToggle(!toggle)
+            }}
           >
-            <motion.div
-              className={styles.sideItem}
-              key={4}
-              variants={navLinkVariants}
-              animate={toggle ? "open" : "closed"}
-              whileHover="hover"
-              whileTap="tap"
-              onClick={() => {
-                setToggle(!toggle)
-              }}
+            <a
+              href="https://rxresu.me/khoza/software"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Link to my cv"
             >
               my cv {fileSvg}
-            </motion.div>
-          </a>
+            </a>
+          </motion.div>
         </>
       ) : (
         <>
-          <Link href={"/"}>
-            <motion.div
-              className={styles.sideItem}
-              key={2}
-              variants={navLinkVariants}
-              animate={toggle ? "open" : "closed"}
-              whileHover="hover"
-              whileTap="tap"
-              onClick={() => {
-                setToggle(!toggle)
-              }}
-            >
-              portfolio
-            </motion.div>
-          </Link>
+          <motion.div
+            className={styles.sideItem}
+            key={2}
+            variants={navLinkVariants}
+            animate={toggle ? "open" : "closed"}
+            whileHover="hover"
+            whileTap="tap"
+            onClick={() => {
+              setToggle(!toggle)
+            }}
+          >
+            <Link href={"/"}>portfolio</Link>
+          </motion.div>
+
           <motion.div
             className={styles.sideItem}
             key={3}

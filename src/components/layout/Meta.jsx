@@ -25,7 +25,6 @@ export default function Meta() {
         sizes="16x16"
         href="assets/media/favicon-16x16.png"
       />
-      <link rel="manifest" href="/site.webmanifest" />
     </Head>
   )
 }

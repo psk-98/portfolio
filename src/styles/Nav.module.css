@@ -79,6 +79,13 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: scale linear 0.25s;
+}
+.sideItem a:hover,
+.sideItem:hover {
+  scale: 1.05;
+  color: #ffb800;
+  stroke: #ffb800;
 }
 .sideItem svg {
   stroke: var(--light-color);

@@ -5,13 +5,7 @@ export const btnYellowVariants = {
     scale: 1.1,
     boxShadow: ["none", "0px 0px 4px 3px #ffb800"],
     transition: {
-      type: "spring",
-      stiffness: 400,
-      damping: 10,
-      boxShadow: {
-        type: "linear",
-        duration: 7000,
-      },
+      type: "linear",
     },
   },
   tap: {
@@ -35,7 +29,7 @@ export const appearVariants = {
     y: 0,
     transition: {
       delay: 0.5,
-      duration: 1,
+      duration: 0.5,
       staggerChildren: 0.5,
     },
   },
@@ -50,7 +44,6 @@ export const scrollWrapperVariants = {
     transition: {
       delay: 2,
       staggerChildern: 2,
-      //delayChildren: 2,
     },
   },
 }

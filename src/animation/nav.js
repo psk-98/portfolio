@@ -57,19 +57,6 @@ export const line3Variants = {
     },
   },
 }
-export const sectionSelectorVariants = {
-  selected: {
-    rotateZ: 225,
-    scale: 1.3,
-    background: "#f2e529",
-  },
-  not_selected: {
-    rotateZ: 0,
-    scale: 1,
-    border: "1px solid #f2e529",
-    background: "none",
-  },
-}
 
 export const sidebarVariants = {
   open: {
@@ -78,8 +65,8 @@ export const sidebarVariants = {
       type: "spring",
       stiffness: 50,
       restDelta: 2,
-      staggerChildren: 0.2,
-      delayChildren: 0.2,
+      staggerChildren: 0.1,
+      delayChildren: 0.4,
     },
   },
   closed: {
@@ -115,21 +102,6 @@ export const navLinkVariants = {
       type: "linear",
       y: { stiffness: 1000 },
     },
-  },
-  hover: {
-    scale: [1, 1.05],
-    color: ["#eee", "#ffb800", "#eee"],
-    transition: {
-      repeat: Infinity,
-      repeatType: "mirror",
-      type: "linear",
-      duration: 2,
-      repeatDelay: 0,
-      times: [0, 0.2, 0.5, 0.7, 1],
-    },
-  },
-  tap: {
-    scale: 0.95,
   },
 }
 export const navVariants = {

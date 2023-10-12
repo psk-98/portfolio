@@ -1,7 +1,6 @@
 export const containerVariants = {
   hidden: {
     opacity: 0,
-    //x: 500,
     transition: {
       type: "spring",
       staggerChildren: 0.3,
@@ -11,7 +10,6 @@ export const containerVariants = {
   },
   visible: {
     opacity: 1,
-    //x: 0,
     transition: {
       staggerChildren: 0.3,
       duration: 0.8,
