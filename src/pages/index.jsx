@@ -40,7 +40,7 @@ export default function Home() {
         canonical={`https://paulkhoza.netlify.app${router.pathname}`}
         openGraph={{
           url: "https://paulkhoza.netlify.app",
-          title: "Paul Khoza",
+          title: "Paul Khoza's Portfolio",
           description: metaDescriptions[0],
           images: [
             {
