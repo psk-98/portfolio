@@ -1,0 +1,67 @@
+---
+title: CSS Gradients
+publishedAt: "2023-10-31"
+coverImage: "https://res.cloudinary.com/psk-98/image/upload/v1698762064/blog%20images/css-gradients_xmbjwt.png"
+headLine:
+  "Enhancing Your Websites with CSS Gradients: Border, Text Color and SVG
+  Gradients Magic."
+---
+
+### Introduction
+
+In the competitive world of web development, standing out from the crowd is
+crucial. One powerful way to captivate your audience and elevate your website's
+visual appeal is by using
+[CSS gradients](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient). n
+this blog post, we will explore how you can apply gradients to borders, text
+color and SVGs to create stunning effects that will leave a lasting impression
+on your visitors.
+
+### What are CSS gradients?
+
+CSS gradients are a smooth transition between two or more colors.They can be
+[linear](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient),
+[radial](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient),
+or
+[conic](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient)
+offering diverse design possibilities.
+
+### Implementing Border Gradient
+
+<LiveCodeEditor id={"borderSnippet"} />
+
+You’ll notice that the border radius in the `no-radius` class doesn’t work. the
+solution is to separate the background into two parts, using `padding-box` (make
+sure this is the same as your body background) and `border-box`.
+
+### Implementing Text Color Gradient
+
+<LiveCodeEditor id={"textGradient"} />
+
+You’ll set the background to your gradient and use
+[`background-clip`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)
+so the background is visible through the text which we make transparent. Try
+commenting out the width to see why I made it fit-content.
+
+### Implementing SVG Gradient
+
+<LiveCodeEditor id={"svgGradient"} />
+
+This is best when you there’s multiple SVGs with the same gradient on a page,
+declare the SVG with your gradient and make sure to give
+[`linear-gradient`](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Gradients)
+an ID for later. Then use you styling I used to hide it, not `display`. After
+this you can style your SVG’s `fill` or `stroke` using the id from earlier via
+the [`url()`](https://developer.mozilla.org/en-US/docs/Web/CSS/url) CSS
+function.
+
+### Conclusion
+
+By leveraging CSS gradients for borders, text color and SVGs you can create
+eye-catching elements that add interest and depth to your website. Whether it's
+a gradient border that frames your content or a captivating gradient text effect
+that grabs attention, remember to experiment, be creative, and let these
+techniques enhance your overall implementation of a design. Remember: the code
+examples provided are just a starting point. Feel free to customize and iterate
+to match your unique design needs. So go on, embrace the gradient magic, and
+make your website truly unforgettable, HAPPY CODING!

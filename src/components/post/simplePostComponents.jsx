@@ -21,7 +21,7 @@ export const CodeBlocks = ({ children }) => {
 
 export const Anchors = ({ children }) => {
   console.log(children)
-  return <a className="color">{children}</a>
+  return <a className="colorText">{children}</a>
 }
 
 export const ListItem = ({ children }) => {

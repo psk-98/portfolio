@@ -1,3 +1,4 @@
+import LiveCodeEditor from "@/components/LiveCodeEditor/LiveCodeEditor"
 import Layout from "@/components/layout/Layout"
 import PostLayout from "@/components/layout/postLayout"
 import {
@@ -68,7 +69,7 @@ export default function BlogPost({ source, frontmatter, readingTime }) {
               </div>
               <div>{readingTime}</div>
             </div>
-            <div className={`${styles.postTitle} color`}>{title}</div>
+            <div className={`${styles.postTitle} colorText`}>{title}</div>
             <div className={styles.coverImage}>
               <Image
                 src={coverImage}
@@ -82,6 +83,7 @@ export default function BlogPost({ source, frontmatter, readingTime }) {
               <MDXRemote
                 {...source}
                 components={{
+                  LiveCodeEditor,
                   h3: Heading,
                   p: Paragraphs,
                   pre: CodeBlocks,

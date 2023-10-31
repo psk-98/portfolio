@@ -68,6 +68,13 @@ h3 {
   font-size: 700;
 }
 
+.colorText {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
   * {
     color: var(--light-color);
@@ -85,13 +92,6 @@ h3 {
   .section-selectors div,
   .form-success a {
     border: 1px solid #ffff00;
-  }
-
-  .color {
-    background: var(--gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   ::-webkit-scrollbar {
@@ -132,7 +132,7 @@ h3 {
 
 @media (min-width: 768px) {
   * {
-    font-size: 4rem;
+    /* font-size: 4rem;  */
   }
   .container {
     margin: 8vh 7rem 0 7rem;
@@ -147,6 +147,9 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+  * {
+    /* font-size: 4rem; */
+  }
   .container {
     margin: 8vh 10rem 0 10rem;
   }

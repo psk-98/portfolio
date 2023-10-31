@@ -20,7 +20,7 @@ export default function Intro() {
       viewport={{ once: true }}
     >
       <div className={styles.intro}>
-        <div className={`${styles.introName} color`}>{`Hi, I'm Paul`}</div>
+        <div className={`${styles.introName} colorText`}>{`Hi, I'm Paul`}</div>
         <div className={styles.introDesc}>
           I design and build dynamic, responsive web apps.
         </div>

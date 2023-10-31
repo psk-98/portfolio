@@ -38,10 +38,14 @@ export function ImageLeft({ post, i }) {
             </div>
             <div>{readingTime}</div>
           </div>
-          <div className={styles.postTitle + " color"}>{title}</div>
+          <div className={styles.postTitle}>
+            <Link href={`/blog/${slug}`} passHref className="colorText">
+              {title}
+            </Link>
+          </div>
           <div className={styles.headLine}>{headLine}</div>
           <div className={styles.readMore}>
-            <Link href={`/blog/${slug}`} passHref className="color">
+            <Link href={`/blog/${slug}`} passHref className="colorText">
               read more...
             </Link>
           </div>
@@ -72,10 +76,14 @@ export function ImageRight({ post, i }) {
             </div>
             <div>{readingTime}</div>
           </div>
-          <div className={styles.postTitle + " color"}>{title}</div>
+          <div className={styles.postTitle}>
+            <Link href={`/blog/${slug}`} passHref className="colorText">
+              {title}
+            </Link>
+          </div>
           <div className={styles.headLine}>{headLine}</div>
           <div className={styles.readMore}>
-            <Link href={`/blog/${slug}`} passHref className="color">
+            <Link href={`/blog/${slug}`} passHref className="colorText">
               read more...
             </Link>
           </div>

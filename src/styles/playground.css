@@ -1,0 +1,29 @@
+.playground button {
+  font-size: 1.5rem !important;
+  color: var(--light-color);
+}
+.playground button[data-selected] {
+  border: none;
+  font-weight: 700;
+}
+.playground {
+  width: 100%;
+  margin: 4rem 0;
+  color: var(--light-color);
+  border: none;
+}
+
+/* mainwrapper */
+.go3749373639 {
+  flex-direction: column;
+  width: 100%;
+  border: none;
+}
+/* mainwrapper other class*/
+.go1253881123 {
+  border: 1px solid var(--darkest-color) !important;
+}
+/* two sections code first then result  */
+.go89676631 {
+  width: 100% !important;
+}

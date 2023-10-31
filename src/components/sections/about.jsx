@@ -53,7 +53,7 @@ export default function About({ aboutRef }) {
         <div className={styles.backgroundLinks}>
           <motion.div
             id="my cv"
-            className={`${styles.cvBtn} btn color`}
+            className={`${styles.cvBtn} btn colorText`}
             // variants={btnYellowVariants}
             whileHover="hover"
             whileTape="tap"

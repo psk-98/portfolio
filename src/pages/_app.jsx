@@ -1,4 +1,6 @@
 import "@/styles/globals.css"
+import "@/styles/playground.css"
+
 import { AnimatePresence } from "framer-motion"
 
 export default function App({ Component, pageProps, router }) {
